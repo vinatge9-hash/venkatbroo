@@ -1,0 +1,122 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Happy Tails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','sans-serif'], heading: ['Poppins','sans-serif'] },
+          colors: { primary: {500:'#0ea5a4'} }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-white text-gray-800">
+  <header class="w-full bg-white/80 sticky top-0 px-6 py-4 flex items-center justify-between border-b">
+    <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-primary-500 flex items-center justify-center text-white">🐾</div>
+      <div class="font-heading text-lg text-primary-700">Happy Tails</div>
+    </a>
+
+    <nav class="flex gap-6">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-gray-700 hover:text-primary-700">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-gray-700 font-medium">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-gray-700 hover:text-primary-700">Contact</a>
+    </nav>
+  </header>
+
+  <main class="w-full max-w-none px-6 py-12">
+    <section class="w-full flex flex-col md:flex-row items-center gap-8">
+      <div class="w-full md:w-1/2">
+        <h1 class="font-heading text-4xl">Our Story</h1>
+        <p class="mt-4 text-gray-600">Founded by dog lovers, Happy Tails grew from a small neighborhood dog walking service into a full-service dog care provider. We focus on compassionate, individualized care and evidence-based training.</p>
+
+        <div class="mt-6 grid grid-cols-1 gap-4">
+          <div class="p-4 bg-primary-50 border border-primary-100 rounded-lg">
+            <div class="font-medium">Mission</div>
+            <div class="text-sm text-gray-600 mt-1">To keep dogs healthy, socialized, and joyful while supporting their families with education and reliability.</div>
+          </div>
+          <div class="p-4 bg-primary-50 border border-primary-100 rounded-lg">
+            <div class="font-medium">Values</div>
+            <div class="text-sm text-gray-600 mt-1">Compassion, trust, safety, and continuous learning.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <img src="https://images.unsplash.com/photo-1569285105724-89e18c990b7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxmcmllbmRseSUyMGdyb3VwJTIwb2YlMjBjYXJldGFrZXJzJTIwcGxheWluZyUyMHdpdGglMjBzZXZlcmFsJTIwaGFwcHklMjBkb2dzJTIwaW4lMjBhJTIwc3VubnklMjB5YXJkfGVufDB8MHx8fDE3NTUxMDcwMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="team" class="w-full h-80 object-cover rounded-xl shadow-lg" />
+      </div>
+    </section>
+
+    <section class="mt-12 w-full">
+      <h2 class="font-heading text-2xl">Meet the Team</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG9mJTIwYSUyMGZlbWFsZSUyMGRvZyUyMHRyYWluZXIlMjBzbWlsaW5nfGVufDB8MHx8fDE3NTUxMDcwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="trainer" class="w-24 h-24 rounded-full object-cover" />
+          <div class="mt-4 font-medium">Sarah Levin</div>
+          <div class="text-sm text-gray-500">Head Trainer</div>
+          <p class="mt-3 text-sm text-gray-600">CPDT-KA certified, specializes in positive reinforcement and puppy socialization.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <img src="https://images.pexels.com/photos/3789215/pexels-photo-3789215.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="groomer" class="w-24 h-24 rounded-full object-cover" />
+          <div class="mt-4 font-medium">Miguel H.</div>
+          <div class="text-sm text-gray-500">Senior Groomer</div>
+          <p class="mt-3 text-sm text-gray-600">Gentle techniques for all coat types, experienced with seniors and anxious dogs.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <img src="https://images.pexels.com/photos/7465698/pexels-photo-7465698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="caregiver" class="w-24 h-24 rounded-full object-cover" />
+          <div class="mt-4 font-medium">Priya S.</div>
+          <div class="text-sm text-gray-500">Care Coordinator</div>
+          <p class="mt-3 text-sm text-gray-600">Your point of contact for booking, updates and personalized care plans.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 w-full bg-primary-50 p-6 rounded-xl">
+      <h3 class="font-heading text-2xl">Our Approach</h3>
+      <p class="mt-3 text-gray-600">We combine professional training methods with enrichment activities and careful health monitoring. Every dog receives an intake consult to tailor care to their personality, age and health.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-md shadow-sm">
+          <div class="font-medium">Safety First</div>
+          <div class="text-sm text-gray-600 mt-1">All staff are trained in pet first aid; we maintain secure facilities and strict cleaning protocols.</div>
+        </div>
+        <div class="p-4 bg-white rounded-md shadow-sm">
+          <div class="font-medium">Transparent Communication</div>
+          <div class="text-sm text-gray-600 mt-1">Photos, updates and clear notes after every session so you never wonder how your dog spent their day.</div>
+        </div>
+        <div class="p-4 bg-white rounded-md shadow-sm">
+          <div class="font-medium">Continuous Training</div>
+          <div class="text-sm text-gray-600 mt-1">We share exercises to continue progress at home and strengthen the bond between you and your dog.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="bg-primary-700 text-white px-6 py-3 rounded-md shadow hover:bg-primary-600 transition">Book a Meet & Greet</a>
+    </section>
+
+  </main>
+
+  <footer class="w-full px-6 py-6 border-t bg-gray-50">
+    <div class="text-sm text-gray-500">© <span id="yearAbout"></span> Happy Tails — Dog Care & Wellness</div>
+  </footer>
+
+  <script>
+    document.getElementById('yearAbout').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
