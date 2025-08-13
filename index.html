@@ -1,0 +1,306 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Tails — Dog Care & Wellness</title>
+  <meta name="description" content="Happy Tails: professional dog care, grooming, walking, and training services to keep your dog happy and healthy." />
+
+  <!-- Google Fonts (declared above per instructions) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          },
+          colors: {
+            primary: {
+              50: '#f4fbff',
+              100: '#e6f6ff',
+              500: '#0ea5a4',
+              700: '#0b8b88'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Ensure body uses full width and no default max widths */
+    html,body,#root { height: 100%; }
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+  </style>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="bg-gradient-to-b from-primary-50 via-white to-white text-gray-800 w-full max-w-none">
+  <!-- Full-width header -->
+  <header class="w-full max-w-none bg-white/60 backdrop-blur sticky top-0 z-40">
+    <div class="w-full max-w-none flex items-center justify-between px-6 py-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-primary-500 flex items-center justify-center text-white shadow-md transform hover:scale-105 transition">🐾</div>
+        <div class="leading-tight">
+          <div class="text-lg font-heading text-primary-700">Happy Tails</div>
+          <div class="text-xs text-gray-500 -mt-1">Dog Care & Wellness</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-primary-700 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-primary-700 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-primary-700 transition">Contact</a>
+        <a href="#services" class="text-sm font-medium text-primary-700 bg-primary-50 px-3 py-2 rounded shadow-sm hover:shadow-md transition">Our Services</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileBtn" aria-label="Open menu" class="p-2 rounded-md hover:bg-gray-100 transition">
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden w-full px-6 pb-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-2 text-gray-700">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-2 text-gray-700">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-2 text-gray-700">Contact</a>
+      <a href="#services" class="block py-2 text-primary-700">Our Services</a>
+    </div>
+  </header>
+
+  <!-- Hero: full-width -->
+  <main class="w-full max-w-none">
+    <section class="w-full max-w-none relative overflow-hidden">
+      <div class="w-full flex flex-col md:flex-row items-center gap-6 px-6 py-16">
+        <div class="w-full md:w-1/2">
+          <h1 class="font-heading text-4xl md:text-5xl leading-tight text-gray-900">Caring for your dog like family</h1>
+          <p class="mt-4 text-gray-600 text-lg">Professional grooming, training, walking and wellness programs to keep tails wagging. Local, trusted, and loving care.</p>
+
+          <div class="mt-6 flex gap-4">
+            <a href="#services" class="inline-block bg-primary-700 text-white px-5 py-3 rounded-md shadow hover:translate-y-0.5 transform transition">Explore Services</a>
+            <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block border border-primary-700 text-primary-700 px-5 py-3 rounded-md hover:bg-primary-50 transition">Book a Consultation</a>
+          </div>
+
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <div class="text-sm text-gray-500">Open Hours</div>
+              <div class="font-medium">Mon - Sat: 8am — 6pm</div>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+              <div class="text-sm text-gray-500">Phone</div>
+              <div class="font-medium">(555) 123-4567</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex justify-center">
+          <div class="w-full max-w-none md:max-w-xl rounded-2xl overflow-hidden shadow-2xl transform hover:scale-102 transition">
+            <img src="https://images.pexels.com/photos/7516218/pexels-photo-7516218.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Happy dog" class="w-full h-64 md:h-80 object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (full width) -->
+    <section id="services" class="w-full max-w-none bg-white/80 py-12 px-6">
+      <div class="w-full flex flex-col items-start gap-6">
+        <h2 class="font-heading text-3xl">Our Services</h2>
+        <p class="text-gray-600 max-w-prose">Tailored care for every stage of your dog's life. Click a card to learn more.</p>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="service-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer" data-service="Grooming">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-md bg-primary-100 flex items-center justify-center text-primary-700">✂️</div>
+              <div>
+                <div class="font-medium">Grooming & Spa</div>
+                <div class="text-sm text-gray-500">Baths, trims, nail care & styling</div>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-600 text-sm">Relaxing spa treatments tailored to your dog’s coat and skin type, with gentle products.</p>
+          </div>
+
+          <div class="service-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer" data-service="Walking">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-md bg-primary-100 flex items-center justify-center text-primary-700">🚶‍♂️</div>
+              <div>
+                <div class="font-medium">Dog Walking</div>
+                <div class="text-sm text-gray-500">Solo or group walks</div>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-600 text-sm">Safe, fun walks — short, long, or playtime in the park. GPS updates available on request.</p>
+          </div>
+
+          <div class="service-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer" data-service="Training">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-md bg-primary-100 flex items-center justify-center text-primary-700">🎓</div>
+              <div>
+                <div class="font-medium">Training & Behavior</div>
+                <div class="text-sm text-gray-500">Puppy classes & behavior support</div>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-600 text-sm">Positive reinforcement methods that build confidence and strengthen your bond.</p>
+          </div>
+        </div>
+
+        <div id="serviceDetail" class="mt-6 w-full bg-primary-50 border border-primary-100 p-6 rounded-lg shadow-inner hidden">
+          <div class="flex items-start justify-between">
+            <div>
+              <div id="serviceTitle" class="font-heading text-xl text-primary-700"></div>
+              <div id="serviceDesc" class="text-gray-700 mt-2"></div>
+            </div>
+            <button id="closeDetail" class="text-sm text-gray-500 hover:text-gray-700">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips / Blog preview (full width) -->
+    <section class="w-full max-w-none py-12 px-6">
+      <div class="w-full flex flex-col gap-6">
+        <h3 class="font-heading text-2xl">Dog Care Tips</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1566264724341-b0b9891bb946?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxjbG9zZS11cCUyMG9mJTIwYSUyMHZldCUyMGNoZWNraW5nJTIwYSUyMGhhcHB5JTIwZG9nfGVufDB8MHx8fDE3NTUxMDY5OTd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="vet" class="w-full h-40 object-cover rounded-md" />
+            <h4 class="mt-4 font-medium">Preventative Health Checks</h4>
+            <p class="text-sm text-gray-600 mt-2">Regular checks help catch small issues early and keep vaccination schedules on track.</p>
+          </article>
+
+          <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/7210364/pexels-photo-7210364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="groom" class="w-full h-40 object-cover rounded-md" />
+            <h4 class="mt-4 font-medium">Coat Care & Grooming</h4>
+            <p class="text-sm text-gray-600 mt-2">Learn how to maintain your dog's coat at home between professional groomings.</p>
+          </article>
+
+          <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/19017773/pexels-photo-19017773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="training" class="w-full h-40 object-cover rounded-md" />
+            <h4 class="mt-4 font-medium">Training: Basics & Beyond</h4>
+            <p class="text-sm text-gray-600 mt-2">Simple exercises to improve manners, recall and confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials carousel full width -->
+    <section class="w-full max-w-none bg-primary-50 py-12 px-6">
+      <div class="w-full flex flex-col gap-6">
+        <h3 class="font-heading text-2xl">What Pet Parents Say</h3>
+        <div id="carousel" class="w-full relative overflow-hidden rounded-xl">
+          <div id="slides" class="flex transition-transform duration-500">
+            <div class="min-w-full p-6 bg-white rounded-xl shadow-md mr-6">
+              <div class="flex items-center gap-4">
+                <img src="https://pixabay.com/get/g1ae93fee1213193eca6bfb3909f188153be05b265b98257707345da0b0f3a22a8fe56e5dac191542c811a8cce28d4ba0_640.jpg" alt="client 1" class="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <div class="font-medium">Jamie R.</div>
+                  <div class="text-sm text-gray-500">Dog owner</div>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-600">"The trainers were patient and our pup loves every visit. Great communication and real results."</p>
+            </div>
+
+            <div class="min-w-full p-6 bg-white rounded-xl shadow-md mr-6">
+              <div class="flex items-center gap-4">
+                <img src="https://images.unsplash.com/photo-1629958540824-9413fd91e3c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxlbGRlcmx5JTIwY291cGxlJTIwd2l0aCUyMGElMjBnb2xkZW4lMjByZXRyaWV2ZXJ8ZW58MHwwfHx8MTc1NTEwNzAwMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="client 2" class="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <div class="font-medium">Marcos & Lee</div>
+                  <div class="text-sm text-gray-500">Dog owners</div>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-600">"Reliable walkers who send photos and updates. We feel safe leaving our dog in their care."</p>
+            </div>
+
+            <div class="min-w-full p-6 bg-white rounded-xl shadow-md mr-6">
+              <div class="flex items-center gap-4">
+                <img src="https://images.unsplash.com/photo-1600277971170-8a7d75fb1bd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw4fHx5b3VuZyUyMHBlcnNvbiUyMHBsYXlpbmclMjB3aXRoJTIwYSUyMGxpdmVseSUyMGJlYWdsZXxlbnwwfDB8fHwxNzU1MTA3MDAyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="client 3" class="w-12 h-12 rounded-full object-cover" />
+                <div>
+                  <div class="font-medium">Asha K.</div>
+                  <div class="text-sm text-gray-500">Dog owner</div>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-600">"Our senior dog has never looked better after their grooming program. Gentle and loving staff."</p>
+            </div>
+          </div>
+
+          <div class="absolute bottom-4 right-4 flex gap-2">
+            <button id="prev" class="bg-white rounded-full p-2 shadow hover:bg-gray-100">‹</button>
+            <button id="next" class="bg-white rounded-full p-2 shadow hover:bg-gray-100">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="w-full max-w-none py-12 px-6">
+      <div class="w-full bg-gradient-to-r from-primary-50 to-white p-8 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h4 class="font-heading text-2xl">Ready for a happier tail?</h4>
+          <p class="text-gray-600 mt-2">Schedule a free meet-and-greet or request a custom care plan for your dog.</p>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="bg-primary-700 text-white px-5 py-3 rounded-md shadow hover:bg-primary-600 transition">Book Now</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="border border-primary-700 text-primary-700 px-5 py-3 rounded-md hover:bg-primary-50 transition">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full max-w-none bg-gray-50 border-t mt-12">
+    <div class="w-full px-6 py-8 flex flex-col md:flex-row items-start justify-between gap-6">
+      <div>
+        <div class="font-heading text-lg text-primary-700">Happy Tails</div>
+        <div class="text-sm text-gray-500 mt-1">Dog Care & Wellness — trusted care for your best friend.</div>
+        <div class="text-sm text-gray-600 mt-4">© <span id="year"></span> Happy Tails</div>
+      </div>
+
+      <div class="flex gap-6">
+        <div>
+          <div class="font-medium">Contact</div>
+          <div class="text-sm text-gray-600">(555) 123-4567</div>
+          <div class="text-sm text-gray-600">hello@happytails.example</div>
+        </div>
+        <div>
+          <div class="font-medium">Follow</div>
+          <div class="flex gap-3 mt-2">
+            <a class="text-gray-500 hover:text-primary-700">Instagram</a>
+            <a class="text-gray-500 hover:text-primary-700">Facebook</a>
+            <a class="text-gray-500 hover:text-primary-700">X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating chat/button -->
+  <button id="chatBtn" class="fixed bottom-6 right-6 bg-primary-700 text-white rounded-full p-4 shadow-lg hover:scale-105 transform transition">💬</button>
+
+  <!-- Modal chat -->
+  <div id="chatModal" class="fixed inset-0 bg-black/40 hidden items-end md:items-center justify-center z-50">
+    <div class="bg-white w-full md:w-96 rounded-t-2xl md:rounded-2xl p-6 shadow-2xl">
+      <div class="flex items-center justify-between">
+        <div class="font-medium">Chat with Happy Tails</div>
+        <button id="closeChat" class="text-gray-500 hover:text-gray-700">✕</button>
+      </div>
+      <div class="mt-4 text-sm text-gray-600">Hi! How can we help? Ask about bookings, services or special needs for your dog.</div>
+      <div class="mt-4 flex gap-2">
+        <input id="chatInput" class="flex-1 border border-gray-200 rounded-md px-3 py-2 text-sm" placeholder="Type a message..." />
+        <button id="sendChat" class="bg-primary-700 text-white px-4 py-2 rounded-md">Send</button>
+      </div>
+      <div id="chatLog" class="mt-4 text-xs text-gray-500 max-h-40 overflow-auto"></div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
