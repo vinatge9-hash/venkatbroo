@@ -1,0 +1,95 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Happy Tails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily:{ sans:['Inter','sans-serif'], heading:['Poppins','sans-serif'] } } } }
+  </script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-white text-gray-800">
+  <header class="w-full px-6 py-4 border-b flex items-center justify-between">
+    <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-primary-500 flex items-center justify-center text-white">🐾</div>
+      <div class="font-heading text-lg text-primary-700">Happy Tails</div>
+    </a>
+    <nav class="flex gap-6">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-gray-700 hover:text-primary-700">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-gray-700 hover:text-primary-700">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-gray-700 font-medium">Contact</a>
+    </nav>
+  </header>
+
+  <main class="w-full px-6 py-12">
+    <h1 class="font-heading text-3xl">Get in touch</h1>
+    <p class="text-gray-600 mt-2">Have a question or want to book? Fill out the form and we'll get back to you within 24 hours.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow-sm">
+        <h3 class="font-medium">Contact Details</h3>
+        <div class="mt-4 text-sm text-gray-600">
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> hello@happytails.example</p>
+          <p class="mt-2">We offer on-site and in-home consultations. Tell us about your dog's needs below.</p>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="font-medium">Visit Us</h4>
+          <p class="text-sm text-gray-600 mt-1">123 Bark Street, Dogtown</p>
+          <img src="https://pixabay.com/get/g062e32bfde52d3453fa1a1036c75245972df5f36be4ec2eb3fa7d3ce45a76474b6327519396b02c62363384b64c18ea62d41d8776b3ed3169ecf16e8a961f88d_640.jpg" alt="location" class="w-full h-40 object-cover rounded-md mt-3" />
+        </div>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-sm">
+        <form id="contactForm" class="flex flex-col gap-4">
+          <label class="text-sm">Full name
+            <input id="name" name="name" required class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="Your name" />
+          </label>
+
+          <label class="text-sm">Email
+            <input id="email" name="email" type="email" required class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="you@example.com" />
+          </label>
+
+          <label class="text-sm">Phone
+            <input id="phone" name="phone" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="(optional)" />
+          </label>
+
+          <label class="text-sm">Service
+            <select id="service" name="service" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2">
+              <option>Grooming</option>
+              <option>Walking</option>
+              <option>Training</option>
+              <option>Consultation</option>
+            </select>
+          </label>
+
+          <label class="text-sm">Message
+            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="Tell us about your dog: age, breed, energy level, special needs."></textarea>
+          </label>
+
+          <div class="flex items-center gap-3">
+            <button type="submit" class="bg-primary-700 text-white px-4 py-2 rounded-md shadow hover:bg-primary-600 transition">Send Message</button>
+            <button id="saveDraft" type="button" class="border border-gray-200 px-3 py-2 rounded-md hover:bg-gray-50">Save Draft</button>
+          </div>
+
+          <div id="formMsg" class="text-sm text-gray-600"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full px-6 py-6 border-t bg-gray-50">
+    <div class="text-sm text-gray-500">© <span id="yearContact"></span> Happy Tails</div>
+  </footer>
+
+  <script src="./assets/js/contact.js"></script>
+</body>
+</html>
